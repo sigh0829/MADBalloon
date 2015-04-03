@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/balloon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/balloon_fat_red"
+        />
+
+    <Button
+        android:id="@+id/inflate"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Inflate"
+        android:textColor="#ffffff"
+        android:layout_margin="6dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_above="@+id/deflate"
+        android:background="@drawable/inflate_button_selector"
+        android:onClick="InflateAnimation"
+        />
+
+    <Button
+        android:id="@+id/deflate"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Deflate"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_margin="6dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/deflate_button_selector"
+        android:onClick="DeflateAnimation"
+        />
+
+
+
+
+
+</RelativeLayout>
